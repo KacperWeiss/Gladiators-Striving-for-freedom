@@ -130,6 +130,7 @@
             this.Controls.Add(this.labelSelectLevelUp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLevelUpSelector";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevelUpSelector";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxToughness)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAgility)).EndInit();
