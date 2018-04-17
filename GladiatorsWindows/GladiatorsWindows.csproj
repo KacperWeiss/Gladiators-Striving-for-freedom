@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9385B3B6-FF98-462A-9840-F5877A463E88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GladiatorsWindows</RootNamespace>
+    <AssemblyName>Gladiators - Striving for freedom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArenaWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArenaWindow.Designer.cs">
+      <DependentUpon>ArenaWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuyMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyMenu.Designer.cs">
+      <DependentUpon>BuyMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLevelUpSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevelUpSelector.Designer.cs">
+      <DependentUpon>FormLevelUpSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainGameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainGameWindow.Designer.cs">
+      <DependentUpon>MainGameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewGameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewGameWindow.Designer.cs">
+      <DependentUpon>NewGameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prompt.cs" />
+    <Compile Include="ScenarioInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScenarioInformation.Designer.cs">
+      <DependentUpon>ScenarioInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopWindow.Designer.cs">
+      <DependentUpon>ShopWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ArenaWindow.resx">
+      <DependentUpon>ArenaWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyMenu.resx">
+      <DependentUpon>BuyMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevelUpSelector.resx">
+      <DependentUpon>FormLevelUpSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainGameWindow.resx">
+      <DependentUpon>MainGameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewGameWindow.resx">
+      <DependentUpon>NewGameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScenarioInformation.resx">
+      <DependentUpon>ScenarioInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopWindow.resx">
+      <DependentUpon>ShopWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackEndEngine\BackEndEngine.csproj">
+      <Project>{047e060f-4974-468d-a39c-894c3beb8bb9}</Project>
+      <Name>BackEndEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitDoor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crownCoin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Armor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeatherHelm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongSword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoundShield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upgrade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strength.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toughness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Easy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excelent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Master.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maceGladiator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shieldGladiator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swordGladiator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wolf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TorsoTarget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadTarget.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
