@@ -42,6 +42,11 @@ namespace BackEndEngine
         public CreatureAttributes creatureAttributes;
 
         /// <summary>
+        /// Last damage received by this creature
+        /// </summary>
+        public string LastReceivedDamage { get; set; }
+
+        /// <summary>
         /// Default constructor
         /// </summary>
         /// <param name="name">Name of the creature</param>

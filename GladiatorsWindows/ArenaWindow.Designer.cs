@@ -31,17 +31,27 @@
             this.components = new System.ComponentModel.Container();
             this.labelArenaName = new System.Windows.Forms.Label();
             this.panelDifficultySelection = new System.Windows.Forms.Panel();
-            this.labelEasyReward = new System.Windows.Forms.Label();
-            this.labelNormalReward = new System.Windows.Forms.Label();
-            this.labelHardReward = new System.Windows.Forms.Label();
             this.labelMasterReward = new System.Windows.Forms.Label();
+            this.labelHardReward = new System.Windows.Forms.Label();
+            this.labelNormalReward = new System.Windows.Forms.Label();
+            this.labelEasyReward = new System.Windows.Forms.Label();
+            this.buttonEasyEnemy = new System.Windows.Forms.Button();
+            this.buttonMasterEnemy = new System.Windows.Forms.Button();
+            this.buttonNormalEnemy = new System.Windows.Forms.Button();
+            this.buttonHardEnemy = new System.Windows.Forms.Button();
             this.panelPlayerDetails = new System.Windows.Forms.Panel();
+            this.pictureBoxLevelUp = new System.Windows.Forms.PictureBox();
             this.labelChestArmorInfo = new System.Windows.Forms.Label();
             this.labelHelmetInfo = new System.Windows.Forms.Label();
             this.labelShieldInfo = new System.Windows.Forms.Label();
             this.labelWeaponInfo = new System.Windows.Forms.Label();
+            this.pictureBoxWeapon = new System.Windows.Forms.PictureBox();
             this.labelFunds = new System.Windows.Forms.Label();
+            this.pictureBoxMoney = new System.Windows.Forms.PictureBox();
             this.labelEquipment = new System.Windows.Forms.Label();
+            this.pictureBoxChestArmor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHelmet = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShield = new System.Windows.Forms.PictureBox();
             this.progressBarHealthPoints = new System.Windows.Forms.ProgressBar();
             this.labelHealthPoints = new System.Windows.Forms.Label();
             this.progressBarLevel = new System.Windows.Forms.ProgressBar();
@@ -49,57 +59,48 @@
             this.labelLevel = new System.Windows.Forms.Label();
             this.labelCharacterInfo = new System.Windows.Forms.Label();
             this.panelCreatureDetails = new System.Windows.Forms.Panel();
+            this.labelCreatureAbout = new System.Windows.Forms.Label();
             this.labelCreatureChestArmorInfo = new System.Windows.Forms.Label();
             this.labelCreatureHelmetInfo = new System.Windows.Forms.Label();
             this.labelCreatureShieldInfo = new System.Windows.Forms.Label();
             this.labelCreatureWeaponInfo = new System.Windows.Forms.Label();
+            this.pictureBoxCreatureWeapon = new System.Windows.Forms.PictureBox();
             this.labelReward = new System.Windows.Forms.Label();
+            this.pictureBoxRewardMoney = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBoxCreatureChestArmor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCreatureHelmet = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCreatureShield = new System.Windows.Forms.PictureBox();
             this.progressBarCreatureHealthPoints = new System.Windows.Forms.ProgressBar();
             this.labelCreatureHealthPoints = new System.Windows.Forms.Label();
             this.labelCreatureLevelNumber = new System.Windows.Forms.Label();
             this.labelCreatureLevelInfo = new System.Windows.Forms.Label();
             this.labelCreatureInfo = new System.Windows.Forms.Label();
-            this.labelCreatureAbout = new System.Windows.Forms.Label();
             this.panelFightingUserInterfacePanel = new System.Windows.Forms.Panel();
+            this.buttonStartFight = new System.Windows.Forms.Button();
+            this.labelChooseYourTarget = new System.Windows.Forms.Label();
             this.pictureBoxHeadTarget = new System.Windows.Forms.PictureBox();
             this.pictureBoxChestTarget = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLevelUp = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWeapon = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMoney = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChestArmor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHelmet = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShield = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCreatureWeapon = new System.Windows.Forms.PictureBox();
-            this.pictureBoxRewardMoney = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCreatureChestArmor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCreatureHelmet = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCreatureShield = new System.Windows.Forms.PictureBox();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
-            this.buttonEasyEnemy = new System.Windows.Forms.Button();
-            this.buttonMasterEnemy = new System.Windows.Forms.Button();
-            this.buttonNormalEnemy = new System.Windows.Forms.Button();
-            this.buttonHardEnemy = new System.Windows.Forms.Button();
-            this.labelChooseYourTarget = new System.Windows.Forms.Label();
-            this.buttonStartFight = new System.Windows.Forms.Button();
             this.timerFight = new System.Windows.Forms.Timer(this.components);
+            this.labelCurrentTarget = new System.Windows.Forms.Label();
             this.panelDifficultySelection.SuspendLayout();
             this.panelPlayerDetails.SuspendLayout();
-            this.panelCreatureDetails.SuspendLayout();
-            this.panelFightingUserInterfacePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeadTarget)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestTarget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevelUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestArmor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelmet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShield)).BeginInit();
+            this.panelCreatureDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRewardMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureChestArmor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureHelmet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureShield)).BeginInit();
+            this.panelFightingUserInterfacePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeadTarget)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestTarget)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,27 +131,16 @@
             this.panelDifficultySelection.TabIndex = 8;
             this.panelDifficultySelection.Visible = false;
             // 
-            // labelEasyReward
+            // labelMasterReward
             // 
-            this.labelEasyReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelEasyReward.AutoSize = true;
-            this.labelEasyReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelEasyReward.Location = new System.Drawing.Point(6, 3);
-            this.labelEasyReward.Name = "labelEasyReward";
-            this.labelEasyReward.Size = new System.Drawing.Size(153, 31);
-            this.labelEasyReward.TabIndex = 8;
-            this.labelEasyReward.Text = "Reward: 50";
-            // 
-            // labelNormalReward
-            // 
-            this.labelNormalReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelNormalReward.AutoSize = true;
-            this.labelNormalReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelNormalReward.Location = new System.Drawing.Point(325, 3);
-            this.labelNormalReward.Name = "labelNormalReward";
-            this.labelNormalReward.Size = new System.Drawing.Size(153, 31);
-            this.labelNormalReward.TabIndex = 9;
-            this.labelNormalReward.Text = "Reward: 50";
+            this.labelMasterReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelMasterReward.AutoSize = true;
+            this.labelMasterReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelMasterReward.Location = new System.Drawing.Point(962, 3);
+            this.labelMasterReward.Name = "labelMasterReward";
+            this.labelMasterReward.Size = new System.Drawing.Size(231, 31);
+            this.labelMasterReward.TabIndex = 11;
+            this.labelMasterReward.Text = "Reward: Freedom";
             // 
             // labelHardReward
             // 
@@ -163,16 +153,107 @@
             this.labelHardReward.TabIndex = 10;
             this.labelHardReward.Text = "Reward: 50";
             // 
-            // labelMasterReward
+            // labelNormalReward
             // 
-            this.labelMasterReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.labelMasterReward.AutoSize = true;
-            this.labelMasterReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelMasterReward.Location = new System.Drawing.Point(962, 3);
-            this.labelMasterReward.Name = "labelMasterReward";
-            this.labelMasterReward.Size = new System.Drawing.Size(231, 31);
-            this.labelMasterReward.TabIndex = 11;
-            this.labelMasterReward.Text = "Reward: Freedom";
+            this.labelNormalReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelNormalReward.AutoSize = true;
+            this.labelNormalReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelNormalReward.Location = new System.Drawing.Point(325, 3);
+            this.labelNormalReward.Name = "labelNormalReward";
+            this.labelNormalReward.Size = new System.Drawing.Size(153, 31);
+            this.labelNormalReward.TabIndex = 9;
+            this.labelNormalReward.Text = "Reward: 50";
+            // 
+            // labelEasyReward
+            // 
+            this.labelEasyReward.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.labelEasyReward.AutoSize = true;
+            this.labelEasyReward.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelEasyReward.Location = new System.Drawing.Point(6, 3);
+            this.labelEasyReward.Name = "labelEasyReward";
+            this.labelEasyReward.Size = new System.Drawing.Size(153, 31);
+            this.labelEasyReward.TabIndex = 8;
+            this.labelEasyReward.Text = "Reward: 50";
+            // 
+            // buttonEasyEnemy
+            // 
+            this.buttonEasyEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonEasyEnemy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonEasyEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Easy;
+            this.buttonEasyEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEasyEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonEasyEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonEasyEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.buttonEasyEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEasyEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonEasyEnemy.ForeColor = System.Drawing.Color.Green;
+            this.buttonEasyEnemy.Location = new System.Drawing.Point(12, 37);
+            this.buttonEasyEnemy.Name = "buttonEasyEnemy";
+            this.buttonEasyEnemy.Size = new System.Drawing.Size(300, 330);
+            this.buttonEasyEnemy.TabIndex = 4;
+            this.buttonEasyEnemy.Text = "Easy";
+            this.buttonEasyEnemy.UseVisualStyleBackColor = false;
+            this.buttonEasyEnemy.Click += new System.EventHandler(this.buttonEasyEnemy_Click);
+            // 
+            // buttonMasterEnemy
+            // 
+            this.buttonMasterEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonMasterEnemy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMasterEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Master;
+            this.buttonMasterEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonMasterEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonMasterEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonMasterEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.buttonMasterEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMasterEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonMasterEnemy.ForeColor = System.Drawing.Color.Green;
+            this.buttonMasterEnemy.Location = new System.Drawing.Point(968, 37);
+            this.buttonMasterEnemy.Name = "buttonMasterEnemy";
+            this.buttonMasterEnemy.Size = new System.Drawing.Size(300, 330);
+            this.buttonMasterEnemy.TabIndex = 7;
+            this.buttonMasterEnemy.Text = "Master";
+            this.buttonMasterEnemy.UseVisualStyleBackColor = false;
+            this.buttonMasterEnemy.Click += new System.EventHandler(this.buttonMasterEnemy_Click);
+            // 
+            // buttonNormalEnemy
+            // 
+            this.buttonNormalEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonNormalEnemy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonNormalEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Normal;
+            this.buttonNormalEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonNormalEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonNormalEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonNormalEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.buttonNormalEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonNormalEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonNormalEnemy.ForeColor = System.Drawing.Color.Green;
+            this.buttonNormalEnemy.Location = new System.Drawing.Point(331, 37);
+            this.buttonNormalEnemy.Name = "buttonNormalEnemy";
+            this.buttonNormalEnemy.Size = new System.Drawing.Size(300, 330);
+            this.buttonNormalEnemy.TabIndex = 5;
+            this.buttonNormalEnemy.Text = " Normal";
+            this.buttonNormalEnemy.UseVisualStyleBackColor = false;
+            this.buttonNormalEnemy.Click += new System.EventHandler(this.buttonNormalEnemy_Click);
+            // 
+            // buttonHardEnemy
+            // 
+            this.buttonHardEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonHardEnemy.BackColor = System.Drawing.Color.Transparent;
+            this.buttonHardEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Excelent;
+            this.buttonHardEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonHardEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonHardEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.buttonHardEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
+            this.buttonHardEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHardEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonHardEnemy.ForeColor = System.Drawing.Color.Green;
+            this.buttonHardEnemy.Location = new System.Drawing.Point(649, 37);
+            this.buttonHardEnemy.Name = "buttonHardEnemy";
+            this.buttonHardEnemy.Size = new System.Drawing.Size(300, 330);
+            this.buttonHardEnemy.TabIndex = 6;
+            this.buttonHardEnemy.Text = "Hard";
+            this.buttonHardEnemy.UseVisualStyleBackColor = false;
+            this.buttonHardEnemy.Click += new System.EventHandler(this.buttonHardEnemy_Click);
             // 
             // panelPlayerDetails
             // 
@@ -198,6 +279,18 @@
             this.panelPlayerDetails.Name = "panelPlayerDetails";
             this.panelPlayerDetails.Size = new System.Drawing.Size(436, 570);
             this.panelPlayerDetails.TabIndex = 9;
+            // 
+            // pictureBoxLevelUp
+            // 
+            this.pictureBoxLevelUp.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLevelUp.Image = global::GladiatorsWindows.Properties.Resources.upgrade;
+            this.pictureBoxLevelUp.Location = new System.Drawing.Point(371, 34);
+            this.pictureBoxLevelUp.Name = "pictureBoxLevelUp";
+            this.pictureBoxLevelUp.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxLevelUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLevelUp.TabIndex = 22;
+            this.pictureBoxLevelUp.TabStop = false;
+            this.pictureBoxLevelUp.Click += new System.EventHandler(this.pictureBoxLevelUp_Click);
             // 
             // labelChestArmorInfo
             // 
@@ -231,6 +324,16 @@
             this.labelWeaponInfo.Size = new System.Drawing.Size(346, 64);
             this.labelWeaponInfo.TabIndex = 18;
             // 
+            // pictureBoxWeapon
+            // 
+            this.pictureBoxWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxWeapon.Location = new System.Drawing.Point(5, 285);
+            this.pictureBoxWeapon.Name = "pictureBoxWeapon";
+            this.pictureBoxWeapon.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxWeapon.TabIndex = 11;
+            this.pictureBoxWeapon.TabStop = false;
+            // 
             // labelFunds
             // 
             this.labelFunds.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -243,6 +346,17 @@
             this.labelFunds.Text = "Gold";
             this.labelFunds.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pictureBoxMoney
+            // 
+            this.pictureBoxMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
+            this.pictureBoxMoney.Location = new System.Drawing.Point(5, 229);
+            this.pictureBoxMoney.Name = "pictureBoxMoney";
+            this.pictureBoxMoney.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMoney.TabIndex = 6;
+            this.pictureBoxMoney.TabStop = false;
+            // 
             // labelEquipment
             // 
             this.labelEquipment.AutoSize = true;
@@ -252,6 +366,36 @@
             this.labelEquipment.Size = new System.Drawing.Size(142, 33);
             this.labelEquipment.TabIndex = 16;
             this.labelEquipment.Text = "Equipment: ";
+            // 
+            // pictureBoxChestArmor
+            // 
+            this.pictureBoxChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxChestArmor.Location = new System.Drawing.Point(5, 495);
+            this.pictureBoxChestArmor.Name = "pictureBoxChestArmor";
+            this.pictureBoxChestArmor.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxChestArmor.TabIndex = 14;
+            this.pictureBoxChestArmor.TabStop = false;
+            // 
+            // pictureBoxHelmet
+            // 
+            this.pictureBoxHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxHelmet.Location = new System.Drawing.Point(5, 425);
+            this.pictureBoxHelmet.Name = "pictureBoxHelmet";
+            this.pictureBoxHelmet.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHelmet.TabIndex = 13;
+            this.pictureBoxHelmet.TabStop = false;
+            // 
+            // pictureBoxShield
+            // 
+            this.pictureBoxShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxShield.Location = new System.Drawing.Point(5, 355);
+            this.pictureBoxShield.Name = "pictureBoxShield";
+            this.pictureBoxShield.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxShield.TabIndex = 12;
+            this.pictureBoxShield.TabStop = false;
             // 
             // progressBarHealthPoints
             // 
@@ -342,6 +486,16 @@
             this.panelCreatureDetails.Size = new System.Drawing.Size(436, 570);
             this.panelCreatureDetails.TabIndex = 10;
             // 
+            // labelCreatureAbout
+            // 
+            this.labelCreatureAbout.AutoSize = true;
+            this.labelCreatureAbout.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelCreatureAbout.Location = new System.Drawing.Point(11, 55);
+            this.labelCreatureAbout.Name = "labelCreatureAbout";
+            this.labelCreatureAbout.Size = new System.Drawing.Size(84, 15);
+            this.labelCreatureAbout.TabIndex = 22;
+            this.labelCreatureAbout.Text = "About creature";
+            // 
             // labelCreatureChestArmorInfo
             // 
             this.labelCreatureChestArmorInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -374,6 +528,16 @@
             this.labelCreatureWeaponInfo.Size = new System.Drawing.Size(346, 64);
             this.labelCreatureWeaponInfo.TabIndex = 18;
             // 
+            // pictureBoxCreatureWeapon
+            // 
+            this.pictureBoxCreatureWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxCreatureWeapon.Location = new System.Drawing.Point(5, 285);
+            this.pictureBoxCreatureWeapon.Name = "pictureBoxCreatureWeapon";
+            this.pictureBoxCreatureWeapon.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxCreatureWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCreatureWeapon.TabIndex = 11;
+            this.pictureBoxCreatureWeapon.TabStop = false;
+            // 
             // labelReward
             // 
             this.labelReward.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -386,6 +550,17 @@
             this.labelReward.Text = "Gold";
             this.labelReward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pictureBoxRewardMoney
+            // 
+            this.pictureBoxRewardMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxRewardMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
+            this.pictureBoxRewardMoney.Location = new System.Drawing.Point(5, 229);
+            this.pictureBoxRewardMoney.Name = "pictureBoxRewardMoney";
+            this.pictureBoxRewardMoney.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxRewardMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxRewardMoney.TabIndex = 6;
+            this.pictureBoxRewardMoney.TabStop = false;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -395,6 +570,36 @@
             this.label6.Size = new System.Drawing.Size(142, 33);
             this.label6.TabIndex = 16;
             this.label6.Text = "Equipment: ";
+            // 
+            // pictureBoxCreatureChestArmor
+            // 
+            this.pictureBoxCreatureChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxCreatureChestArmor.Location = new System.Drawing.Point(5, 495);
+            this.pictureBoxCreatureChestArmor.Name = "pictureBoxCreatureChestArmor";
+            this.pictureBoxCreatureChestArmor.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxCreatureChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCreatureChestArmor.TabIndex = 14;
+            this.pictureBoxCreatureChestArmor.TabStop = false;
+            // 
+            // pictureBoxCreatureHelmet
+            // 
+            this.pictureBoxCreatureHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxCreatureHelmet.Location = new System.Drawing.Point(5, 425);
+            this.pictureBoxCreatureHelmet.Name = "pictureBoxCreatureHelmet";
+            this.pictureBoxCreatureHelmet.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxCreatureHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCreatureHelmet.TabIndex = 13;
+            this.pictureBoxCreatureHelmet.TabStop = false;
+            // 
+            // pictureBoxCreatureShield
+            // 
+            this.pictureBoxCreatureShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxCreatureShield.Location = new System.Drawing.Point(5, 355);
+            this.pictureBoxCreatureShield.Name = "pictureBoxCreatureShield";
+            this.pictureBoxCreatureShield.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxCreatureShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCreatureShield.TabIndex = 12;
+            this.pictureBoxCreatureShield.TabStop = false;
             // 
             // progressBarCreatureHealthPoints
             // 
@@ -451,18 +656,9 @@
             this.labelCreatureInfo.TabIndex = 5;
             this.labelCreatureInfo.Text = "Character info:";
             // 
-            // labelCreatureAbout
-            // 
-            this.labelCreatureAbout.AutoSize = true;
-            this.labelCreatureAbout.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCreatureAbout.Location = new System.Drawing.Point(11, 55);
-            this.labelCreatureAbout.Name = "labelCreatureAbout";
-            this.labelCreatureAbout.Size = new System.Drawing.Size(84, 15);
-            this.labelCreatureAbout.TabIndex = 22;
-            this.labelCreatureAbout.Text = "About creature";
-            // 
             // panelFightingUserInterfacePanel
             // 
+            this.panelFightingUserInterfacePanel.Controls.Add(this.labelCurrentTarget);
             this.panelFightingUserInterfacePanel.Controls.Add(this.buttonStartFight);
             this.panelFightingUserInterfacePanel.Controls.Add(this.labelChooseYourTarget);
             this.panelFightingUserInterfacePanel.Controls.Add(this.pictureBoxHeadTarget);
@@ -474,11 +670,32 @@
             this.panelFightingUserInterfacePanel.Size = new System.Drawing.Size(1244, 600);
             this.panelFightingUserInterfacePanel.TabIndex = 11;
             // 
+            // buttonStartFight
+            // 
+            this.buttonStartFight.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonStartFight.Location = new System.Drawing.Point(455, 16);
+            this.buttonStartFight.Name = "buttonStartFight";
+            this.buttonStartFight.Size = new System.Drawing.Size(329, 67);
+            this.buttonStartFight.TabIndex = 14;
+            this.buttonStartFight.Text = "START";
+            this.buttonStartFight.UseVisualStyleBackColor = true;
+            this.buttonStartFight.Click += new System.EventHandler(this.buttonStartFight_Click);
+            // 
+            // labelChooseYourTarget
+            // 
+            this.labelChooseYourTarget.AutoSize = true;
+            this.labelChooseYourTarget.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelChooseYourTarget.Location = new System.Drawing.Point(474, 86);
+            this.labelChooseYourTarget.Name = "labelChooseYourTarget";
+            this.labelChooseYourTarget.Size = new System.Drawing.Size(289, 37);
+            this.labelChooseYourTarget.TabIndex = 13;
+            this.labelChooseYourTarget.Text = "Choose your target";
+            // 
             // pictureBoxHeadTarget
             // 
             this.pictureBoxHeadTarget.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxHeadTarget.Image = global::GladiatorsWindows.Properties.Resources.HeadTarget;
-            this.pictureBoxHeadTarget.Location = new System.Drawing.Point(522, 136);
+            this.pictureBoxHeadTarget.Location = new System.Drawing.Point(522, 165);
             this.pictureBoxHeadTarget.Name = "pictureBoxHeadTarget";
             this.pictureBoxHeadTarget.Size = new System.Drawing.Size(200, 200);
             this.pictureBoxHeadTarget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -498,120 +715,6 @@
             this.pictureBoxChestTarget.TabStop = false;
             this.pictureBoxChestTarget.Click += new System.EventHandler(this.pictureBoxChestTarget_Click);
             // 
-            // pictureBoxLevelUp
-            // 
-            this.pictureBoxLevelUp.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLevelUp.Image = global::GladiatorsWindows.Properties.Resources.upgrade;
-            this.pictureBoxLevelUp.Location = new System.Drawing.Point(371, 34);
-            this.pictureBoxLevelUp.Name = "pictureBoxLevelUp";
-            this.pictureBoxLevelUp.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxLevelUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLevelUp.TabIndex = 22;
-            this.pictureBoxLevelUp.TabStop = false;
-            this.pictureBoxLevelUp.Click += new System.EventHandler(this.pictureBoxLevelUp_Click);
-            // 
-            // pictureBoxWeapon
-            // 
-            this.pictureBoxWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWeapon.Location = new System.Drawing.Point(5, 285);
-            this.pictureBoxWeapon.Name = "pictureBoxWeapon";
-            this.pictureBoxWeapon.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxWeapon.TabIndex = 11;
-            this.pictureBoxWeapon.TabStop = false;
-            // 
-            // pictureBoxMoney
-            // 
-            this.pictureBoxMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
-            this.pictureBoxMoney.Location = new System.Drawing.Point(5, 229);
-            this.pictureBoxMoney.Name = "pictureBoxMoney";
-            this.pictureBoxMoney.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMoney.TabIndex = 6;
-            this.pictureBoxMoney.TabStop = false;
-            // 
-            // pictureBoxChestArmor
-            // 
-            this.pictureBoxChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxChestArmor.Location = new System.Drawing.Point(5, 495);
-            this.pictureBoxChestArmor.Name = "pictureBoxChestArmor";
-            this.pictureBoxChestArmor.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxChestArmor.TabIndex = 14;
-            this.pictureBoxChestArmor.TabStop = false;
-            // 
-            // pictureBoxHelmet
-            // 
-            this.pictureBoxHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxHelmet.Location = new System.Drawing.Point(5, 425);
-            this.pictureBoxHelmet.Name = "pictureBoxHelmet";
-            this.pictureBoxHelmet.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHelmet.TabIndex = 13;
-            this.pictureBoxHelmet.TabStop = false;
-            // 
-            // pictureBoxShield
-            // 
-            this.pictureBoxShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxShield.Location = new System.Drawing.Point(5, 355);
-            this.pictureBoxShield.Name = "pictureBoxShield";
-            this.pictureBoxShield.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxShield.TabIndex = 12;
-            this.pictureBoxShield.TabStop = false;
-            // 
-            // pictureBoxCreatureWeapon
-            // 
-            this.pictureBoxCreatureWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCreatureWeapon.Location = new System.Drawing.Point(5, 285);
-            this.pictureBoxCreatureWeapon.Name = "pictureBoxCreatureWeapon";
-            this.pictureBoxCreatureWeapon.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxCreatureWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCreatureWeapon.TabIndex = 11;
-            this.pictureBoxCreatureWeapon.TabStop = false;
-            // 
-            // pictureBoxRewardMoney
-            // 
-            this.pictureBoxRewardMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxRewardMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
-            this.pictureBoxRewardMoney.Location = new System.Drawing.Point(5, 229);
-            this.pictureBoxRewardMoney.Name = "pictureBoxRewardMoney";
-            this.pictureBoxRewardMoney.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxRewardMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxRewardMoney.TabIndex = 6;
-            this.pictureBoxRewardMoney.TabStop = false;
-            // 
-            // pictureBoxCreatureChestArmor
-            // 
-            this.pictureBoxCreatureChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCreatureChestArmor.Location = new System.Drawing.Point(5, 495);
-            this.pictureBoxCreatureChestArmor.Name = "pictureBoxCreatureChestArmor";
-            this.pictureBoxCreatureChestArmor.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxCreatureChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCreatureChestArmor.TabIndex = 14;
-            this.pictureBoxCreatureChestArmor.TabStop = false;
-            // 
-            // pictureBoxCreatureHelmet
-            // 
-            this.pictureBoxCreatureHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCreatureHelmet.Location = new System.Drawing.Point(5, 425);
-            this.pictureBoxCreatureHelmet.Name = "pictureBoxCreatureHelmet";
-            this.pictureBoxCreatureHelmet.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxCreatureHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCreatureHelmet.TabIndex = 13;
-            this.pictureBoxCreatureHelmet.TabStop = false;
-            // 
-            // pictureBoxCreatureShield
-            // 
-            this.pictureBoxCreatureShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCreatureShield.Location = new System.Drawing.Point(5, 355);
-            this.pictureBoxCreatureShield.Name = "pictureBoxCreatureShield";
-            this.pictureBoxCreatureShield.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxCreatureShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCreatureShield.TabIndex = 12;
-            this.pictureBoxCreatureShield.TabStop = false;
-            // 
             // pictureBoxExit
             // 
             this.pictureBoxExit.BackColor = System.Drawing.Color.Transparent;
@@ -624,111 +727,20 @@
             this.pictureBoxExit.TabStop = false;
             this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
-            // buttonEasyEnemy
-            // 
-            this.buttonEasyEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonEasyEnemy.BackColor = System.Drawing.Color.Transparent;
-            this.buttonEasyEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Easy;
-            this.buttonEasyEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEasyEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonEasyEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonEasyEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.buttonEasyEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEasyEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonEasyEnemy.ForeColor = System.Drawing.Color.Green;
-            this.buttonEasyEnemy.Location = new System.Drawing.Point(12, 37);
-            this.buttonEasyEnemy.Name = "buttonEasyEnemy";
-            this.buttonEasyEnemy.Size = new System.Drawing.Size(300, 330);
-            this.buttonEasyEnemy.TabIndex = 4;
-            this.buttonEasyEnemy.Text = "Easy";
-            this.buttonEasyEnemy.UseVisualStyleBackColor = false;
-            this.buttonEasyEnemy.Click += new System.EventHandler(this.buttonEasyEnemy_Click);
-            // 
-            // buttonMasterEnemy
-            // 
-            this.buttonMasterEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonMasterEnemy.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMasterEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Master;
-            this.buttonMasterEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonMasterEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonMasterEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonMasterEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.buttonMasterEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMasterEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonMasterEnemy.ForeColor = System.Drawing.Color.Green;
-            this.buttonMasterEnemy.Location = new System.Drawing.Point(968, 37);
-            this.buttonMasterEnemy.Name = "buttonMasterEnemy";
-            this.buttonMasterEnemy.Size = new System.Drawing.Size(300, 330);
-            this.buttonMasterEnemy.TabIndex = 7;
-            this.buttonMasterEnemy.Text = "Master";
-            this.buttonMasterEnemy.UseVisualStyleBackColor = false;
-            this.buttonMasterEnemy.Click += new System.EventHandler(this.buttonMasterEnemy_Click);
-            // 
-            // buttonNormalEnemy
-            // 
-            this.buttonNormalEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonNormalEnemy.BackColor = System.Drawing.Color.Transparent;
-            this.buttonNormalEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Normal;
-            this.buttonNormalEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonNormalEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonNormalEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonNormalEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.buttonNormalEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNormalEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonNormalEnemy.ForeColor = System.Drawing.Color.Green;
-            this.buttonNormalEnemy.Location = new System.Drawing.Point(331, 37);
-            this.buttonNormalEnemy.Name = "buttonNormalEnemy";
-            this.buttonNormalEnemy.Size = new System.Drawing.Size(300, 330);
-            this.buttonNormalEnemy.TabIndex = 5;
-            this.buttonNormalEnemy.Text = " Normal";
-            this.buttonNormalEnemy.UseVisualStyleBackColor = false;
-            this.buttonNormalEnemy.Click += new System.EventHandler(this.buttonNormalEnemy_Click);
-            // 
-            // buttonHardEnemy
-            // 
-            this.buttonHardEnemy.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buttonHardEnemy.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHardEnemy.BackgroundImage = global::GladiatorsWindows.Properties.Resources.Excelent;
-            this.buttonHardEnemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonHardEnemy.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonHardEnemy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonHardEnemy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(216)))), ((int)(((byte)(216)))));
-            this.buttonHardEnemy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHardEnemy.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonHardEnemy.ForeColor = System.Drawing.Color.Green;
-            this.buttonHardEnemy.Location = new System.Drawing.Point(649, 37);
-            this.buttonHardEnemy.Name = "buttonHardEnemy";
-            this.buttonHardEnemy.Size = new System.Drawing.Size(300, 330);
-            this.buttonHardEnemy.TabIndex = 6;
-            this.buttonHardEnemy.Text = "Hard";
-            this.buttonHardEnemy.UseVisualStyleBackColor = false;
-            this.buttonHardEnemy.Click += new System.EventHandler(this.buttonHardEnemy_Click);
-            // 
-            // labelChooseYourTarget
-            // 
-            this.labelChooseYourTarget.AutoSize = true;
-            this.labelChooseYourTarget.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelChooseYourTarget.Location = new System.Drawing.Point(474, 86);
-            this.labelChooseYourTarget.Name = "labelChooseYourTarget";
-            this.labelChooseYourTarget.Size = new System.Drawing.Size(289, 37);
-            this.labelChooseYourTarget.TabIndex = 13;
-            this.labelChooseYourTarget.Text = "Choose your target";
-            // 
-            // buttonStartFight
-            // 
-            this.buttonStartFight.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonStartFight.Location = new System.Drawing.Point(455, 16);
-            this.buttonStartFight.Name = "buttonStartFight";
-            this.buttonStartFight.Size = new System.Drawing.Size(329, 67);
-            this.buttonStartFight.TabIndex = 14;
-            this.buttonStartFight.Text = "START";
-            this.buttonStartFight.UseVisualStyleBackColor = true;
-            this.buttonStartFight.Click += new System.EventHandler(this.buttonStartFight_Click);
-            // 
             // timerFight
             // 
             this.timerFight.Interval = 50;
             this.timerFight.Tick += new System.EventHandler(this.timerFight_Tick);
+            // 
+            // labelCurrentTarget
+            // 
+            this.labelCurrentTarget.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelCurrentTarget.Location = new System.Drawing.Point(522, 146);
+            this.labelCurrentTarget.Name = "labelCurrentTarget";
+            this.labelCurrentTarget.Size = new System.Drawing.Size(200, 23);
+            this.labelCurrentTarget.TabIndex = 15;
+            this.labelCurrentTarget.Text = "Current target: Torso";
+            this.labelCurrentTarget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ArenaWindow
             // 
@@ -747,23 +759,23 @@
             this.panelDifficultySelection.PerformLayout();
             this.panelPlayerDetails.ResumeLayout(false);
             this.panelPlayerDetails.PerformLayout();
-            this.panelCreatureDetails.ResumeLayout(false);
-            this.panelCreatureDetails.PerformLayout();
-            this.panelFightingUserInterfacePanel.ResumeLayout(false);
-            this.panelFightingUserInterfacePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeadTarget)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestTarget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevelUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestArmor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelmet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShield)).EndInit();
+            this.panelCreatureDetails.ResumeLayout(false);
+            this.panelCreatureDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRewardMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureChestArmor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureHelmet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCreatureShield)).EndInit();
+            this.panelFightingUserInterfacePanel.ResumeLayout(false);
+            this.panelFightingUserInterfacePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeadTarget)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestTarget)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -826,5 +838,6 @@
         private System.Windows.Forms.Label labelChooseYourTarget;
         private System.Windows.Forms.Button buttonStartFight;
         private System.Windows.Forms.Timer timerFight;
+        private System.Windows.Forms.Label labelCurrentTarget;
     }
 }

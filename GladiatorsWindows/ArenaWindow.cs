@@ -366,6 +366,7 @@ namespace GladiatorsWindows
         private void pictureBoxHeadTarget_Click(object sender, EventArgs e)
         {
             valiableTargets = ValiableTargets.Head;
+            labelCurrentTarget.Text = "Current target: Head";
         }
 
         /// <summary>
@@ -376,6 +377,7 @@ namespace GladiatorsWindows
         private void pictureBoxChestTarget_Click(object sender, EventArgs e)
         {
             valiableTargets = ValiableTargets.Torso;
+            labelCurrentTarget.Text = "Current target: Torso";
         }
 
         /// <summary>
