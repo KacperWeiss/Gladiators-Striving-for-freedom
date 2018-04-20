@@ -40,6 +40,7 @@
             this.buttonNormalEnemy = new System.Windows.Forms.Button();
             this.buttonHardEnemy = new System.Windows.Forms.Button();
             this.panelPlayerDetails = new System.Windows.Forms.Panel();
+            this.labelPlayerReceivedDamage = new System.Windows.Forms.Label();
             this.pictureBoxLevelUp = new System.Windows.Forms.PictureBox();
             this.labelChestArmorInfo = new System.Windows.Forms.Label();
             this.labelHelmetInfo = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             this.labelLevel = new System.Windows.Forms.Label();
             this.labelCharacterInfo = new System.Windows.Forms.Label();
             this.panelCreatureDetails = new System.Windows.Forms.Panel();
+            this.labelEnemyReceivedDamage = new System.Windows.Forms.Label();
             this.labelCreatureAbout = new System.Windows.Forms.Label();
             this.labelCreatureChestArmorInfo = new System.Windows.Forms.Label();
             this.labelCreatureHelmetInfo = new System.Windows.Forms.Label();
@@ -77,15 +79,14 @@
             this.labelCreatureLevelInfo = new System.Windows.Forms.Label();
             this.labelCreatureInfo = new System.Windows.Forms.Label();
             this.panelFightingUserInterfacePanel = new System.Windows.Forms.Panel();
+            this.labelCurrentTarget = new System.Windows.Forms.Label();
             this.buttonStartFight = new System.Windows.Forms.Button();
             this.labelChooseYourTarget = new System.Windows.Forms.Label();
             this.pictureBoxHeadTarget = new System.Windows.Forms.PictureBox();
             this.pictureBoxChestTarget = new System.Windows.Forms.PictureBox();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.timerFight = new System.Windows.Forms.Timer(this.components);
-            this.labelCurrentTarget = new System.Windows.Forms.Label();
-            this.labelPlayerReceivedDamage = new System.Windows.Forms.Label();
-            this.labelEnemyReceivedDamage = new System.Windows.Forms.Label();
+            this.toolTipInfo = new System.Windows.Forms.ToolTip(this.components);
             this.panelDifficultySelection.SuspendLayout();
             this.panelPlayerDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevelUp)).BeginInit();
@@ -283,6 +284,16 @@
             this.panelPlayerDetails.Size = new System.Drawing.Size(436, 570);
             this.panelPlayerDetails.TabIndex = 9;
             // 
+            // labelPlayerReceivedDamage
+            // 
+            this.labelPlayerReceivedDamage.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPlayerReceivedDamage.Location = new System.Drawing.Point(71, 132);
+            this.labelPlayerReceivedDamage.Name = "labelPlayerReceivedDamage";
+            this.labelPlayerReceivedDamage.Size = new System.Drawing.Size(350, 23);
+            this.labelPlayerReceivedDamage.TabIndex = 23;
+            this.labelPlayerReceivedDamage.Text = "Received damage HP";
+            this.labelPlayerReceivedDamage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // pictureBoxLevelUp
             // 
             this.pictureBoxLevelUp.BackColor = System.Drawing.Color.Transparent;
@@ -293,6 +304,7 @@
             this.pictureBoxLevelUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxLevelUp.TabIndex = 22;
             this.pictureBoxLevelUp.TabStop = false;
+            this.toolTipInfo.SetToolTip(this.pictureBoxLevelUp, "Show Level UP menu");
             this.pictureBoxLevelUp.Click += new System.EventHandler(this.pictureBoxLevelUp_Click);
             // 
             // labelChestArmorInfo
@@ -490,6 +502,16 @@
             this.panelCreatureDetails.Size = new System.Drawing.Size(436, 570);
             this.panelCreatureDetails.TabIndex = 10;
             // 
+            // labelEnemyReceivedDamage
+            // 
+            this.labelEnemyReceivedDamage.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelEnemyReceivedDamage.Location = new System.Drawing.Point(71, 132);
+            this.labelEnemyReceivedDamage.Name = "labelEnemyReceivedDamage";
+            this.labelEnemyReceivedDamage.Size = new System.Drawing.Size(350, 23);
+            this.labelEnemyReceivedDamage.TabIndex = 24;
+            this.labelEnemyReceivedDamage.Text = "Received damage HP";
+            this.labelEnemyReceivedDamage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // labelCreatureAbout
             // 
             this.labelCreatureAbout.AutoSize = true;
@@ -553,6 +575,7 @@
             this.labelReward.TabIndex = 17;
             this.labelReward.Text = "Gold";
             this.labelReward.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTipInfo.SetToolTip(this.labelReward, "Your reward in gold, also 5*gold is your exp reward");
             // 
             // pictureBoxRewardMoney
             // 
@@ -674,6 +697,16 @@
             this.panelFightingUserInterfacePanel.Size = new System.Drawing.Size(1244, 600);
             this.panelFightingUserInterfacePanel.TabIndex = 11;
             // 
+            // labelCurrentTarget
+            // 
+            this.labelCurrentTarget.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelCurrentTarget.Location = new System.Drawing.Point(522, 146);
+            this.labelCurrentTarget.Name = "labelCurrentTarget";
+            this.labelCurrentTarget.Size = new System.Drawing.Size(200, 23);
+            this.labelCurrentTarget.TabIndex = 15;
+            this.labelCurrentTarget.Text = "Current target: Torso";
+            this.labelCurrentTarget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // buttonStartFight
             // 
             this.buttonStartFight.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -682,6 +715,7 @@
             this.buttonStartFight.Size = new System.Drawing.Size(329, 67);
             this.buttonStartFight.TabIndex = 14;
             this.buttonStartFight.Text = "START";
+            this.toolTipInfo.SetToolTip(this.buttonStartFight, "Start fight");
             this.buttonStartFight.UseVisualStyleBackColor = true;
             this.buttonStartFight.Click += new System.EventHandler(this.buttonStartFight_Click);
             // 
@@ -705,6 +739,7 @@
             this.pictureBoxHeadTarget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHeadTarget.TabIndex = 12;
             this.pictureBoxHeadTarget.TabStop = false;
+            this.toolTipInfo.SetToolTip(this.pictureBoxHeadTarget, "Choose head as your target");
             this.pictureBoxHeadTarget.Click += new System.EventHandler(this.pictureBoxHeadTarget_Click);
             // 
             // pictureBoxChestTarget
@@ -717,6 +752,7 @@
             this.pictureBoxChestTarget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxChestTarget.TabIndex = 11;
             this.pictureBoxChestTarget.TabStop = false;
+            this.toolTipInfo.SetToolTip(this.pictureBoxChestTarget, "Choose torso as your target");
             this.pictureBoxChestTarget.Click += new System.EventHandler(this.pictureBoxChestTarget_Click);
             // 
             // pictureBoxExit
@@ -729,42 +765,13 @@
             this.pictureBoxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxExit.TabIndex = 2;
             this.pictureBoxExit.TabStop = false;
+            this.toolTipInfo.SetToolTip(this.pictureBoxExit, "Exit arena");
             this.pictureBoxExit.Click += new System.EventHandler(this.pictureBoxExit_Click);
             // 
             // timerFight
             // 
             this.timerFight.Interval = 50;
             this.timerFight.Tick += new System.EventHandler(this.timerFight_Tick);
-            // 
-            // labelCurrentTarget
-            // 
-            this.labelCurrentTarget.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCurrentTarget.Location = new System.Drawing.Point(522, 146);
-            this.labelCurrentTarget.Name = "labelCurrentTarget";
-            this.labelCurrentTarget.Size = new System.Drawing.Size(200, 23);
-            this.labelCurrentTarget.TabIndex = 15;
-            this.labelCurrentTarget.Text = "Current target: Torso";
-            this.labelCurrentTarget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelPlayerReceivedDamage
-            // 
-            this.labelPlayerReceivedDamage.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPlayerReceivedDamage.Location = new System.Drawing.Point(71, 132);
-            this.labelPlayerReceivedDamage.Name = "labelPlayerReceivedDamage";
-            this.labelPlayerReceivedDamage.Size = new System.Drawing.Size(350, 23);
-            this.labelPlayerReceivedDamage.TabIndex = 23;
-            this.labelPlayerReceivedDamage.Text = "Received damage HP";
-            this.labelPlayerReceivedDamage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // labelEnemyReceivedDamage
-            // 
-            this.labelEnemyReceivedDamage.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelEnemyReceivedDamage.Location = new System.Drawing.Point(71, 132);
-            this.labelEnemyReceivedDamage.Name = "labelEnemyReceivedDamage";
-            this.labelEnemyReceivedDamage.Size = new System.Drawing.Size(350, 23);
-            this.labelEnemyReceivedDamage.TabIndex = 24;
-            this.labelEnemyReceivedDamage.Text = "Received damage HP";
-            this.labelEnemyReceivedDamage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ArenaWindow
             // 
@@ -865,5 +872,6 @@
         private System.Windows.Forms.Label labelCurrentTarget;
         private System.Windows.Forms.Label labelPlayerReceivedDamage;
         private System.Windows.Forms.Label labelEnemyReceivedDamage;
+        private System.Windows.Forms.ToolTip toolTipInfo;
     }
 }
