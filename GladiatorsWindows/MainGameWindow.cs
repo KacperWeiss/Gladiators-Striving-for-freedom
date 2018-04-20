@@ -37,7 +37,7 @@ namespace GladiatorsWindows
             timerSeconds.Enabled = true;
 
             this.game = newGame;
-            game.GetPlayer().creatureAttributes.Experiance = 1000;
+            game.GetPlayer().creatureAttributes.Experiance = 1400;
             labelPlayersName.Text = game.GetPlayer().Name;
 
             labelLevelNumber.Text = game.GetPlayer().creatureAttributes.Level.ToString();

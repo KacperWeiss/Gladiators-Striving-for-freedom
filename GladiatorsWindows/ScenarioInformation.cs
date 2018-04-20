@@ -21,6 +21,9 @@ namespace GladiatorsWindows
         public ScenarioInformation()
         {
             InitializeComponent();
+            labelScenarioInformation.Text = $"You are a gladiator in early Roman Empire. You are promised" +
+                $" that if you ever become master of the arena, you will earn your freedom back. \nYour goal:\n" +
+                $"Fight in the arena, to earn more money and experience and then stand up against arena's master!";
         }
         /// <summary>
         /// Closes window
