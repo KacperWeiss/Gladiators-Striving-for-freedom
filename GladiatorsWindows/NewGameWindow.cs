@@ -22,6 +22,7 @@ namespace GladiatorsWindows
         public NewGameWindow()
         {
             InitializeComponent();
+            labelGameName.Text = $"\tGladiators: Striving for freedom!";
         }
 
         /// <summary>
