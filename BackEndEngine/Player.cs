@@ -61,9 +61,9 @@ namespace BackEndEngine
         public void SelectLevelUp(AttributesSelection attributesSelection)
         {
             creatureAttributes.Experiance -= creatureAttributes.NextLevelExperiance;
-            creatureAttributes.NextLevelExperiance = (int)(creatureAttributes.NextLevelExperiance * 2.5);
             creatureAttributes.MaximumHealthPoints *= 1.5;
             creatureAttributes.Level++;
+            creatureAttributes.NextLevelExperiance = creatureAttributes.Level * creatureAttributes.Level * 100;
 
             switch (attributesSelection)
             {

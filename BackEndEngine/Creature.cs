@@ -54,7 +54,7 @@ namespace BackEndEngine
         {
             Name = name;
             creatureAttributes.Experiance = 0;
-            creatureAttributes.NextLevelExperiance = 100 * level + (int)(0.25 * level - 1);
+            creatureAttributes.NextLevelExperiance = 100 * level + (int)(0.25 * (level - 1));
             creatureAttributes.Level = level;
             creatureAttributes.MaximumHealthPoints = maximumHealthPoints * (0.5 + level/2);
             creatureAttributes.HealthPoints = creatureAttributes.MaximumHealthPoints;
