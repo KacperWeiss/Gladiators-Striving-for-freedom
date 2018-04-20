@@ -162,13 +162,13 @@ namespace GladiatorsWindows
             {
                 GameTime++;
 
-                if (game.GetPlayer().creatureAttributes.HealthPoints <= game.GetPlayer().creatureAttributes.MaximumHealthPoints - 10)
+                if (game.GetPlayer().creatureAttributes.HealthPoints <= game.GetPlayer().creatureAttributes.MaximumHealthPoints - 5)
                 {
                     game.GetPlayer().creatureAttributes.HealthPoints = game.GetPlayer().creatureAttributes.MaximumHealthPoints;
                 }
                 else
                 {
-                    game.GetPlayer().creatureAttributes.HealthPoints += 10;
+                    game.GetPlayer().creatureAttributes.HealthPoints += 5;
                 }
             }
 
