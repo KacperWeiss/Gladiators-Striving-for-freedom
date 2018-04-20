@@ -122,7 +122,7 @@ namespace GladiatorsWindows
         }
 
         /// <summary>
-        /// Easy enemy of level 1
+        /// Easy enemy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -132,15 +132,36 @@ namespace GladiatorsWindows
             int randomInteger = random.Next(0, 100);
             if (randomInteger < 10)
             {
-                enemyCreature = new Beast("Wolf", "Claws");
+                if (game.GetPlayer().creatureAttributes.Level > 3)
+                {
+                    enemyCreature = new Beast("Wolf", "Claws", 275, game.GetPlayer().creatureAttributes.Level - 2);
+                }
+                else
+                {
+                    enemyCreature = new Beast("Wolf", "Claws");
+                }
             }
-            else if(randomInteger < 40)
+            else if (randomInteger < 40)
             {
-                enemyCreature = new MaceGladiator("Mace Gladiator");
+                if (game.GetPlayer().creatureAttributes.Level > 3)
+                {
+                    enemyCreature = new MaceGladiator("Mace Gladiator", 175, game.GetPlayer().creatureAttributes.Level - 2);
+                }
+                else
+                {
+                    enemyCreature = new MaceGladiator("Mace Gladiator");
+                }
             }
             else
             {
-                enemyCreature = new SwordGladiator("Sword Gladiator");
+                if (game.GetPlayer().creatureAttributes.Level > 3)
+                {
+                    enemyCreature = new MaceGladiator("Sword Gladiator", 150, game.GetPlayer().creatureAttributes.Level - 2);
+                }
+                else
+                {
+                    enemyCreature = new SwordGladiator("Sword Gladiator");
+                }
             }
             labelReward.Text = $"{rewards[Rewards.Low]:C}";
             reward = rewards[Rewards.Low];
@@ -169,7 +190,7 @@ namespace GladiatorsWindows
         }
 
         /// <summary>
-        /// Normal enemy of level 10
+        /// Normal enemy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -179,15 +200,15 @@ namespace GladiatorsWindows
             int randomInteger = random.Next(0, 100);
             if (randomInteger < 10)
             {
-                enemyCreature = new Beast("Wolf", "Claws", 275, 10);
+                enemyCreature = new Beast("Wolf", "Claws", 275, game.GetPlayer().creatureAttributes.Level);
             }
             else if (randomInteger < 40)
             {
-                enemyCreature = new MaceGladiator("Mace Gladiator",175, 10);
+                enemyCreature = new MaceGladiator("Mace Gladiator", 175, game.GetPlayer().creatureAttributes.Level);
             }
             else
             {
-                enemyCreature = new SwordGladiator("Sword Gladiator", 150, 10);
+                enemyCreature = new SwordGladiator("Sword Gladiator", 150, game.GetPlayer().creatureAttributes.Level);
             }
             labelReward.Text = $"{rewards[Rewards.Normal]:C}";
             reward = rewards[Rewards.Normal];
@@ -217,7 +238,7 @@ namespace GladiatorsWindows
         }
 
         /// <summary>
-        /// Hard enemy of level 20
+        /// Hard enemy
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -227,15 +248,15 @@ namespace GladiatorsWindows
             int randomInteger = random.Next(0, 100);
             if (randomInteger < 10)
             {
-                enemyCreature = new Beast("Wolf", "Claws", 275, 20);
+                enemyCreature = new Beast("Wolf", "Claws", 275, game.GetPlayer().creatureAttributes.Level + 3);
             }
             else if (randomInteger < 40)
             {
-                enemyCreature = new MaceGladiator("Mace Gladiator", 175, 20);
+                enemyCreature = new MaceGladiator("Mace Gladiator", 175, game.GetPlayer().creatureAttributes.Level + 4);
             }
             else
             {
-                enemyCreature = new SwordGladiator("Sword Gladiator", 150, 20);
+                enemyCreature = new SwordGladiator("Sword Gladiator", 150, game.GetPlayer().creatureAttributes.Level + 5);
             }
             labelReward.Text = $"{rewards[Rewards.Good]:C}";
             reward = rewards[Rewards.Good];
