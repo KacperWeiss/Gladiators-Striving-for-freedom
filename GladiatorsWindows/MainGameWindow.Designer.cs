@@ -31,42 +31,42 @@
             this.components = new System.ComponentModel.Container();
             this.labelPlayersName = new System.Windows.Forms.Label();
             this.panelPlayerDetails = new System.Windows.Forms.Panel();
+            this.pictureBoxLevelUp = new System.Windows.Forms.PictureBox();
+            this.labelChestArmorInfo = new System.Windows.Forms.Label();
+            this.labelHelmetInfo = new System.Windows.Forms.Label();
+            this.labelShieldInfo = new System.Windows.Forms.Label();
+            this.labelWeaponInfo = new System.Windows.Forms.Label();
+            this.pictureBoxWeapon = new System.Windows.Forms.PictureBox();
             this.labelFunds = new System.Windows.Forms.Label();
+            this.pictureBoxMoney = new System.Windows.Forms.PictureBox();
             this.labelEquipment = new System.Windows.Forms.Label();
+            this.pictureBoxChestArmor = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHelmet = new System.Windows.Forms.PictureBox();
+            this.pictureBoxShield = new System.Windows.Forms.PictureBox();
             this.progressBarHealthPoints = new System.Windows.Forms.ProgressBar();
             this.labelHealthPoints = new System.Windows.Forms.Label();
             this.progressBarLevel = new System.Windows.Forms.ProgressBar();
             this.labelLevelNumber = new System.Windows.Forms.Label();
             this.labelLevel = new System.Windows.Forms.Label();
             this.labelCharacterInfo = new System.Windows.Forms.Label();
-            this.labelWeaponInfo = new System.Windows.Forms.Label();
-            this.labelShieldInfo = new System.Windows.Forms.Label();
-            this.labelHelmetInfo = new System.Windows.Forms.Label();
-            this.labelChestArmorInfo = new System.Windows.Forms.Label();
             this.timerSeconds = new System.Windows.Forms.Timer(this.components);
             this.labelTimerHours = new System.Windows.Forms.Label();
             this.labelTimerMinutes = new System.Windows.Forms.Label();
             this.labelTimerSeconds = new System.Windows.Forms.Label();
             this.panelTimerHolder = new System.Windows.Forms.Panel();
             this.pictureBoxShowInformations = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLevelUp = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWeapon = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMoney = new System.Windows.Forms.PictureBox();
-            this.pictureBoxChestArmor = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHelmet = new System.Windows.Forms.PictureBox();
-            this.pictureBoxShield = new System.Windows.Forms.PictureBox();
             this.buttonArena = new System.Windows.Forms.Button();
             this.buttonGoToShop = new System.Windows.Forms.Button();
             this.pictureBoxExit = new System.Windows.Forms.PictureBox();
             this.panelPlayerDetails.SuspendLayout();
-            this.panelTimerHolder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowInformations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevelUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMoney)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestArmor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelmet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShield)).BeginInit();
+            this.panelTimerHolder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowInformations)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,6 +106,60 @@
             this.panelPlayerDetails.Size = new System.Drawing.Size(436, 570);
             this.panelPlayerDetails.TabIndex = 4;
             // 
+            // pictureBoxLevelUp
+            // 
+            this.pictureBoxLevelUp.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLevelUp.Image = global::GladiatorsWindows.Properties.Resources.upgrade;
+            this.pictureBoxLevelUp.Location = new System.Drawing.Point(371, 34);
+            this.pictureBoxLevelUp.Name = "pictureBoxLevelUp";
+            this.pictureBoxLevelUp.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxLevelUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLevelUp.TabIndex = 22;
+            this.pictureBoxLevelUp.TabStop = false;
+            this.pictureBoxLevelUp.Click += new System.EventHandler(this.pictureBoxLevelUp_Click);
+            // 
+            // labelChestArmorInfo
+            // 
+            this.labelChestArmorInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelChestArmorInfo.Location = new System.Drawing.Point(75, 495);
+            this.labelChestArmorInfo.Name = "labelChestArmorInfo";
+            this.labelChestArmorInfo.Size = new System.Drawing.Size(346, 64);
+            this.labelChestArmorInfo.TabIndex = 21;
+            // 
+            // labelHelmetInfo
+            // 
+            this.labelHelmetInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelHelmetInfo.Location = new System.Drawing.Point(75, 425);
+            this.labelHelmetInfo.Name = "labelHelmetInfo";
+            this.labelHelmetInfo.Size = new System.Drawing.Size(346, 64);
+            this.labelHelmetInfo.TabIndex = 20;
+            // 
+            // labelShieldInfo
+            // 
+            this.labelShieldInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelShieldInfo.Location = new System.Drawing.Point(75, 355);
+            this.labelShieldInfo.Name = "labelShieldInfo";
+            this.labelShieldInfo.Size = new System.Drawing.Size(346, 64);
+            this.labelShieldInfo.TabIndex = 19;
+            // 
+            // labelWeaponInfo
+            // 
+            this.labelWeaponInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWeaponInfo.Location = new System.Drawing.Point(75, 285);
+            this.labelWeaponInfo.Name = "labelWeaponInfo";
+            this.labelWeaponInfo.Size = new System.Drawing.Size(346, 64);
+            this.labelWeaponInfo.TabIndex = 18;
+            // 
+            // pictureBoxWeapon
+            // 
+            this.pictureBoxWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxWeapon.Location = new System.Drawing.Point(5, 285);
+            this.pictureBoxWeapon.Name = "pictureBoxWeapon";
+            this.pictureBoxWeapon.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxWeapon.TabIndex = 11;
+            this.pictureBoxWeapon.TabStop = false;
+            // 
             // labelFunds
             // 
             this.labelFunds.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -118,6 +172,17 @@
             this.labelFunds.Text = "Gold";
             this.labelFunds.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pictureBoxMoney
+            // 
+            this.pictureBoxMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
+            this.pictureBoxMoney.Location = new System.Drawing.Point(5, 229);
+            this.pictureBoxMoney.Name = "pictureBoxMoney";
+            this.pictureBoxMoney.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMoney.TabIndex = 6;
+            this.pictureBoxMoney.TabStop = false;
+            // 
             // labelEquipment
             // 
             this.labelEquipment.AutoSize = true;
@@ -127,6 +192,36 @@
             this.labelEquipment.Size = new System.Drawing.Size(142, 33);
             this.labelEquipment.TabIndex = 16;
             this.labelEquipment.Text = "Equipment: ";
+            // 
+            // pictureBoxChestArmor
+            // 
+            this.pictureBoxChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxChestArmor.Location = new System.Drawing.Point(5, 495);
+            this.pictureBoxChestArmor.Name = "pictureBoxChestArmor";
+            this.pictureBoxChestArmor.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxChestArmor.TabIndex = 14;
+            this.pictureBoxChestArmor.TabStop = false;
+            // 
+            // pictureBoxHelmet
+            // 
+            this.pictureBoxHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxHelmet.Location = new System.Drawing.Point(5, 425);
+            this.pictureBoxHelmet.Name = "pictureBoxHelmet";
+            this.pictureBoxHelmet.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHelmet.TabIndex = 13;
+            this.pictureBoxHelmet.TabStop = false;
+            // 
+            // pictureBoxShield
+            // 
+            this.pictureBoxShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxShield.Location = new System.Drawing.Point(5, 355);
+            this.pictureBoxShield.Name = "pictureBoxShield";
+            this.pictureBoxShield.Size = new System.Drawing.Size(64, 64);
+            this.pictureBoxShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxShield.TabIndex = 12;
+            this.pictureBoxShield.TabStop = false;
             // 
             // progressBarHealthPoints
             // 
@@ -193,38 +288,6 @@
             this.labelCharacterInfo.TabIndex = 5;
             this.labelCharacterInfo.Text = "Character info:";
             // 
-            // labelWeaponInfo
-            // 
-            this.labelWeaponInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelWeaponInfo.Location = new System.Drawing.Point(75, 285);
-            this.labelWeaponInfo.Name = "labelWeaponInfo";
-            this.labelWeaponInfo.Size = new System.Drawing.Size(346, 64);
-            this.labelWeaponInfo.TabIndex = 18;
-            // 
-            // labelShieldInfo
-            // 
-            this.labelShieldInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelShieldInfo.Location = new System.Drawing.Point(75, 355);
-            this.labelShieldInfo.Name = "labelShieldInfo";
-            this.labelShieldInfo.Size = new System.Drawing.Size(346, 64);
-            this.labelShieldInfo.TabIndex = 19;
-            // 
-            // labelHelmetInfo
-            // 
-            this.labelHelmetInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelHelmetInfo.Location = new System.Drawing.Point(75, 425);
-            this.labelHelmetInfo.Name = "labelHelmetInfo";
-            this.labelHelmetInfo.Size = new System.Drawing.Size(346, 64);
-            this.labelHelmetInfo.TabIndex = 20;
-            // 
-            // labelChestArmorInfo
-            // 
-            this.labelChestArmorInfo.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelChestArmorInfo.Location = new System.Drawing.Point(75, 495);
-            this.labelChestArmorInfo.Name = "labelChestArmorInfo";
-            this.labelChestArmorInfo.Size = new System.Drawing.Size(346, 64);
-            this.labelChestArmorInfo.TabIndex = 21;
-            // 
             // timerSeconds
             // 
             this.timerSeconds.Interval = 1000;
@@ -282,69 +345,6 @@
             this.pictureBoxShowInformations.TabIndex = 5;
             this.pictureBoxShowInformations.TabStop = false;
             this.pictureBoxShowInformations.Click += new System.EventHandler(this.pictureBoxShowInformations_Click);
-            // 
-            // pictureBoxLevelUp
-            // 
-            this.pictureBoxLevelUp.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLevelUp.Image = global::GladiatorsWindows.Properties.Resources.upgrade;
-            this.pictureBoxLevelUp.Location = new System.Drawing.Point(371, 34);
-            this.pictureBoxLevelUp.Name = "pictureBoxLevelUp";
-            this.pictureBoxLevelUp.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxLevelUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLevelUp.TabIndex = 22;
-            this.pictureBoxLevelUp.TabStop = false;
-            this.pictureBoxLevelUp.Click += new System.EventHandler(this.pictureBoxLevelUp_Click);
-            // 
-            // pictureBoxWeapon
-            // 
-            this.pictureBoxWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWeapon.Location = new System.Drawing.Point(5, 285);
-            this.pictureBoxWeapon.Name = "pictureBoxWeapon";
-            this.pictureBoxWeapon.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxWeapon.TabIndex = 11;
-            this.pictureBoxWeapon.TabStop = false;
-            // 
-            // pictureBoxMoney
-            // 
-            this.pictureBoxMoney.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxMoney.Image = global::GladiatorsWindows.Properties.Resources.crownCoin;
-            this.pictureBoxMoney.Location = new System.Drawing.Point(5, 229);
-            this.pictureBoxMoney.Name = "pictureBoxMoney";
-            this.pictureBoxMoney.Size = new System.Drawing.Size(50, 50);
-            this.pictureBoxMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMoney.TabIndex = 6;
-            this.pictureBoxMoney.TabStop = false;
-            // 
-            // pictureBoxChestArmor
-            // 
-            this.pictureBoxChestArmor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxChestArmor.Location = new System.Drawing.Point(5, 495);
-            this.pictureBoxChestArmor.Name = "pictureBoxChestArmor";
-            this.pictureBoxChestArmor.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxChestArmor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxChestArmor.TabIndex = 14;
-            this.pictureBoxChestArmor.TabStop = false;
-            // 
-            // pictureBoxHelmet
-            // 
-            this.pictureBoxHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxHelmet.Location = new System.Drawing.Point(5, 425);
-            this.pictureBoxHelmet.Name = "pictureBoxHelmet";
-            this.pictureBoxHelmet.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHelmet.TabIndex = 13;
-            this.pictureBoxHelmet.TabStop = false;
-            // 
-            // pictureBoxShield
-            // 
-            this.pictureBoxShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxShield.Location = new System.Drawing.Point(5, 355);
-            this.pictureBoxShield.Name = "pictureBoxShield";
-            this.pictureBoxShield.Size = new System.Drawing.Size(64, 64);
-            this.pictureBoxShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxShield.TabIndex = 12;
-            this.pictureBoxShield.TabStop = false;
             // 
             // buttonArena
             // 
@@ -413,15 +413,15 @@
             this.Text = "MainGameWindow";
             this.panelPlayerDetails.ResumeLayout(false);
             this.panelPlayerDetails.PerformLayout();
-            this.panelTimerHolder.ResumeLayout(false);
-            this.panelTimerHolder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowInformations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLevelUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMoney)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChestArmor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHelmet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShield)).EndInit();
+            this.panelTimerHolder.ResumeLayout(false);
+            this.panelTimerHolder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxShowInformations)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExit)).EndInit();
             this.ResumeLayout(false);
 

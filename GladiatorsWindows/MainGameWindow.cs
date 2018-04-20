@@ -175,7 +175,11 @@ namespace GladiatorsWindows
             GameTime++;
             labelTimerHours.Text = $"{(int)(GameTime / 3600)}h";
             labelTimerMinutes.Text = $"{(int)((GameTime / 60) % 60)}m";
-            labelTimerSeconds.Text = $"{(int)(GameTime % 60)}m";
+            labelTimerSeconds.Text = $"{(int)(GameTime % 60)}s";
+
+            progressBarHealthPoints.Minimum = 0;
+            progressBarHealthPoints.Maximum = (int)game.GetPlayer().creatureAttributes.MaximumHealthPoints;
+            progressBarHealthPoints.Value = (int)game.GetPlayer().creatureAttributes.HealthPoints > 0 ? (int)game.GetPlayer().creatureAttributes.HealthPoints : 0;
         }
 
         /// <summary>
