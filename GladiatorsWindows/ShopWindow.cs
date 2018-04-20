@@ -26,6 +26,24 @@ namespace GladiatorsWindows
             InitializeComponent();
             game = gameReference;
             labelShopName.Text = game.GoToShop().Name;
+
+            buttonBuySwords.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuySwords.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Sword");
+
+            buttonBuyRoundShields.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuyRoundShields.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("RoundShield");
+
+            buttonBuyMaces.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuyMaces.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Mace");
+
+            buttonBuyChestPieces.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuyChestPieces.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Armor");
+
+            buttonBuyFullHelmets.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuyFullHelmets.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("Helm");
+
+            buttonBuyLeatherHelmets.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonBuyLeatherHelmets.BackgroundImage = (Bitmap)Properties.Resources.ResourceManager.GetObject("LeatherHelm");
         }
 
         /// <summary>
