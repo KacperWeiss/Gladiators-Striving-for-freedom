@@ -105,8 +105,17 @@ namespace BackEndEngine
                             double EnemiesDefenceValue = (0.9 + creature.creatureAttributes.Toughness * 0.1) * 0.1 * (creature.defensiveItems[DefensiveEquipment.Shield].defensiveParameters.DefenceValue + creature.defensiveItems[DefensiveEquipment.Helmet].defensiveParameters.DefenceValue);
                             double DamageMitigation = EnemiesDefenceValue > this.weapon.weaponParameters.ArmorPiercing ? EnemiesDefenceValue - this.weapon.weaponParameters.ArmorPiercing : 0;
                             creature.creatureAttributes.HealthPoints -= (attackValue - DamageMitigation);
+                            creature.LastReceivedDamage = Convert.ToString(attackValue - DamageMitigation) + " HP";
                         }
-                    } 
+                        else
+                        {
+                            creature.LastReceivedDamage = "Blocked!";
+                        }
+                    }
+                    else
+                    {
+                        creature.LastReceivedDamage = "Miss!";
+                    }
                     break;
 
                 case ValiableTargets.Torso:
@@ -116,6 +125,11 @@ namespace BackEndEngine
                         double EnemiesDefenceValue = (0.9 + creature.creatureAttributes.Toughness * 0.1) * 0.1 * (creature.defensiveItems[DefensiveEquipment.Shield].defensiveParameters.DefenceValue + creature.defensiveItems[DefensiveEquipment.ChestArmor].defensiveParameters.DefenceValue);
                         double DamageMitigation = EnemiesDefenceValue > this.weapon.weaponParameters.ArmorPiercing ? EnemiesDefenceValue - this.weapon.weaponParameters.ArmorPiercing : 0;
                         creature.creatureAttributes.HealthPoints -= (attackValue - DamageMitigation);
+                        creature.LastReceivedDamage = Convert.ToString(attackValue - DamageMitigation) + " HP";
+                    }
+                    else
+                    {
+                        creature.LastReceivedDamage = "Blocked!";
                     }
                     break;
             }

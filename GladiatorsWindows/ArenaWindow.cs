@@ -408,7 +408,7 @@ namespace GladiatorsWindows
             {
                 timerFight.Enabled = false;
                 game.GetPlayer().Funds += reward;
-                game.GetPlayer().creatureAttributes.Experiance += (int)reward;
+                game.GetPlayer().creatureAttributes.Experiance += (int)reward * 5;
                 MessageBox.Show("You are victorius!");
                 Close();
             }
@@ -417,20 +417,23 @@ namespace GladiatorsWindows
                 playerTimeCounter += 5;
                 enemyTimeCounter += 5;
 
-                if(game.GetPlayer().GetWeapon().weaponParameters.Recharge >= playerTimeCounter)
+                if(game.GetPlayer().GetWeapon().weaponParameters.Recharge <= playerTimeCounter)
                 {
                     playerTimeCounter -= game.GetPlayer().Fight(enemyCreature, valiableTargets);
+                    labelEnemyReceivedDamage.Text = enemyCreature.LastReceivedDamage;
                 }
-                if(enemyCreature.GetWeapon().weaponParameters.Recharge >= enemyTimeCounter)
+                if(enemyCreature.GetWeapon().weaponParameters.Recharge <= enemyTimeCounter)
                 {
                     int temporaryValue = random.Next(0, 100);
                     if (temporaryValue < 20)
                     {
                         enemyTimeCounter -= enemyCreature.Fight(game.GetPlayer(), ValiableTargets.Head);
+                        labelPlayerReceivedDamage.Text = game.GetPlayer().LastReceivedDamage;
                     }
                     else
                     {
                         enemyTimeCounter -= enemyCreature.Fight(game.GetPlayer());
+                        labelPlayerReceivedDamage.Text = game.GetPlayer().LastReceivedDamage;
                     }
                 }
             }
