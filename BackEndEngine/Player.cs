@@ -101,7 +101,7 @@ namespace BackEndEngine
         /// <summary>
         /// Allows player to rename his character
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="name">New name for character</param>
         public void Rename(string name)
         {
             Name = name;
